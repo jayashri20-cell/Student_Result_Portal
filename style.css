@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
+}
+
+/* Navbar */
+.navbar {
+    background: #087fce;
+    padding: 17px 0;
+    box-shadow: 0 4px 14px rgba(8, 127, 206, 0.25);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+    color: #dff4ff;
+}
+
+/* Main */
+.main-container,
+.result-container {
+    max-width: 1000px;
+    margin: 45px auto;
+}
+
+/* Heading */
+.page-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-heading h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0563a5;
+    margin-bottom: 8px;
+}
+
+.page-heading p {
+    color: #64748b;
+    margin: 0;
+}
+
+/* Card */
+.portal-card {
+    border: none;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(8, 127, 206, 0.12);
+    overflow: hidden;
+}
+
+/* Card Header */
+.card-header {
+    background: #0794e3;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 18px 22px;
+    border: none;
+}
+
+.card-header i {
+    margin-right: 8px;
+    color: #dff4ff;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+    min-height: 48px;
+    border: 1px solid #c5ddec;
+    border-radius: 8px;
+    padding: 10px 14px;
+    background: #ffffff;
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0794e3;
+    box-shadow: 0 0 0 3px rgba(7, 148, 227, 0.14);
+}
+
+/* Section */
+.section-title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dceefa;
+    color: #0563a5;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-title i {
+    margin-right: 8px;
+    color: #0794e3;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #087fce;
+    color: #ffffff;
+    padding: 12px 34px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background: #0563a5;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.submit-btn i {
+    margin-right: 6px;
+}
+
+/* Student Information */
+.info-box {
+    padding: 16px;
+    border-bottom: 1px solid #e0edf5;
+}
+
+.info-box strong {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.info-box span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Result Table */
+.result-table {
+    margin: 0;
+}
+
+.result-table th {
+    background: #dff3ff;
+    color: #0563a5;
+    font-weight: 600;
+    border-color: #c0e2f5;
+}
+
+.result-table td,
+.result-table th {
+    padding: 14px;
+    vertical-align: middle;
+    border-color: #e0ebf3;
+}
+
+/* Summary */
+.summary-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.summary-box {
+    flex: 1;
+    background: #f5fbff;
+    border: 1px solid #d6eaf7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.summary-box h6 {
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.summary-box h3 {
+    color: #087fce;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.summary-box p {
+    color: #94a3b8;
+    margin: 5px 0 0;
+}
+
+/* Final Result */
+.final-result {
+    text-align: center;
+    padding: 18px;
+    border-radius: 9px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pass {
+    background: #e2f7eb;
+    color: #18733d;
+}
+
+.fail {
+    background: #fde8e8;
+    color: #b42323;
+}
+
+/* Back Button */
+.back-btn {
+    background: #087fce;
+    color: #ffffff;
+    padding: 11px 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+.back-btn:hover {
+    background: #0563a5;
+    color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main-container,
+    .result-container {
+        margin: 25px 15px;
+    }
+
+    .page-heading h1 {
+        font-size: 26px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .summary-row {
+        flex-direction: column;
+    }
+}

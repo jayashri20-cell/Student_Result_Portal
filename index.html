@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <span class="navbar-brand">
+                <i class="bi bi-mortarboard-fill"></i>
+                Student Portal
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- Main Section -->
+    <div class="container main-container">
+
+        <div class="page-heading">
+            <h1>Student Registration</h1>
+            <p>Enter your details and examination marks</p>
+        </div>
+
+
+        <!-- Registration Card -->
+        <div class="card portal-card">
+
+            <div class="card-header">
+                <i class="bi bi-person-vcard"></i>
+                Student Details
+            </div>
+
+            <div class="card-body">
+
+                <form id="studentForm">
+
+                    <!-- Student Details -->
+                    <div class="row g-4">
+
+                        <!-- Name -->
+                        <div class="col-md-6">
+                            <label for="studentName" class="form-label">
+                                Student Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                class="form-control"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Register Number -->
+                        <div class="col-md-6">
+                            <label for="registerNumber" class="form-label">
+                                Register Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="registerNumber"
+                                class="form-control"
+                                placeholder="Enter register number"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="Enter email"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                class="form-control"
+                                placeholder="Enter phone number"
+                                maxlength="10"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Course -->
+                        <div class="col-md-12">
+                            <label for="course" class="form-label">
+                                Select your course
+                            </label>
+
+                            <select
+                                id="course"
+                                class="form-select"
+                                required
+                            >
+
+                                <option value="">
+                                    Select your course
+                                </option>
+
+                                <!-- IT Related Courses -->
+
+                                <option value="B.E Computer Science and Engineering">
+                                    B.E Computer Science and Engineering
+                                </option>
+
+                                <option value="B.Tech Computer Science and Engineering">
+                                    B.Tech Computer Science and Engineering
+                                </option>
+
+                                <option value="B.Tech Information Technology">
+                                    B.Tech Information Technology
+                                </option>
+
+                                <option value="B.Sc Computer Science">
+                                    B.Sc Computer Science
+                                </option>
+
+                                <option value="B.Sc Information Technology">
+                                    B.Sc Information Technology
+                                </option>
+
+                                <option value="BCA">
+                                    BCA
+                                </option>
+
+                                <option value="MCA">
+                                    MCA
+                                </option>
+
+                                <option value="M.Sc Computer Science">
+                                    M.Sc Computer Science
+                                </option>
+
+                                <option value="M.Sc Information Technology">
+                                    M.Sc Information Technology
+                                </option>
+
+                                <option value="B.Tech Artificial Intelligence and Data Science">
+                                    B.Tech Artificial Intelligence and Data Science
+                                </option>
+
+                                <option value="B.Tech Artificial Intelligence and Machine Learning">
+                                    B.Tech Artificial Intelligence and Machine Learning
+                                </option>
+
+                                <option value="B.E Artificial Intelligence and Machine Learning">
+                                    B.E Artificial Intelligence and Machine Learning
+                                </option>
+
+                                <option value="B.E Computer Science and Business Systems">
+                                    B.E Computer Science and Business Systems
+                                </option>
+
+                                <option value="B.E Information Science and Engineering">
+                                    B.E Information Science and Engineering
+                                </option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Examination Section -->
+                    <div class="section-title">
+                        <i class="bi bi-pencil-square"></i>
+                        Examination Marks
+                    </div>
+
+
+                    <div class="row g-4">
+
+                        <!-- HTML -->
+                        <div class="col-md-4">
+                            <label for="htmlMark" class="form-label">
+                                HTML
+                            </label>
+
+                            <input
+                                type="number"
+                                id="htmlMark"
+                                class="form-control"
+                                placeholder="Enter marks"
+                                min="0"
+                                max="100"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Bootstrap -->
+                        <div class="col-md-4">
+                            <label for="bootstrapMark" class="form-label">
+                                Bootstrap
+                            </label>
+
+                            <input
+                                type="number"
+                                id="bootstrapMark"
+                                class="form-control"
+                                placeholder="Enter marks"
+                                min="0"
+                                max="100"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- JavaScript -->
+                        <div class="col-md-4">
+                            <label for="javascriptMark" class="form-label">
+                                JavaScript
+                            </label>
+
+                            <input
+                                type="number"
+                                id="javascriptMark"
+                                class="form-control"
+                                placeholder="Enter marks"
+                                min="0"
+                                max="100"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <div class="text-center mt-5">
+
+                        <button
+                            type="submit"
+                            class="btn submit-btn"
+                        >
+                            <i class="bi bi-check-circle"></i>
+                            Submit Details
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
